@@ -76,6 +76,31 @@ gameCounter++;
 console.log(gameCounter);
 
 
+//********************************** */
+// stack(primitive)---jab bhi stack memory use hoti hai to hame variable ki copy milti hai stack me
+// heap (Non - primitive )-- jab bhi koi object heap memory me chala jata hai waha se aapko milta hai reference 
+// original value ka jo bhi changes krege original value me changes honge.....
+
+let myYoutubename = "ajeettiwari018";
+let anotherYoutube =myYoutubename;
+anotherYoutube = "sanjutiwari019";
+
+console.log(myYoutubename);
+console.log(anotherYoutube);
+
+
+let userOne ={
+    email:"ajeet@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo =userOne;
+
+userTwo.email ="sanju@123";
+console.log(userOne.email);
+console.log(userTwo.email)
+
+
 
 
 
